@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- primary meta tags -->
+  <title>Rinconcito Huancaíno - Auténtica Comida Peruana</title>
+  <meta name="title" content="Rinconcito Huancaíno - Auténtica Comida Peruana">
+  <meta name="description" content="Restaurante de comida peruana auténtica. Ceviches, lomo saltado, ají de gallina y más.">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- preload images -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- #PRELOADER -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Rinconcito</p>
+  </div>
+
+
+  <!-- #TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+
+      <!-- DIRECCIÓN PRINCIPAL (mostrada en topbar). Las 3 sucursales completas están en el footer -->
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">
+          Bio bio  638   santiago centro — 2 Sucursales
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">Lun a Dom: 11:00 am - 10:00 pm</span>
+      </div>
+
+      <!-- WHATSAPP 1 -->
+      <a href="https://wa.me/56952093541" target="_blank" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">+56 9 5209 3541</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <!-- WHATSAPP 2 (si tienen un segundo número). Si solo usan uno, BORRA este bloque entero -->
+      <a href="https://wa.me/56952093541" target="_blank" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">+56 9 5209 3541</span>
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="Rinconcito Huancaíno - Inicio">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="cerrar menú" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Rinconcito Huancaíno - Inicio">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Inicio</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Menú</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Nosotros</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#resenas" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Reseñas</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contacto" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Contacto</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visítanos</p>
+
+          <address class="body-4">
+            Bio bio  638   santiago centro, <br>
+            Ciudad, Chile
+          </address>
+
+          <p class="body-4 navbar-text">Abierto: 11:00 am - 10:00 pm</p>
+
+          <a href="mailto:contacto@rinconcitohuancaino.com" class="body-4 sidebar-link">contacto@rinconcitohuancaino.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Reservas por WhatsApp</p>
+
+          <a href="https://wa.me/56952093541" target="_blank" class="body-1 contact-number hover-underline">
+            +56 9 5209 3541
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="https://wa.me/56952093541" target="_blank" class="btn btn-secondary">
+        <span class="text text-1">Reservar</span>
+        <span class="text text-2" aria-hidden="true">Reservar</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="abrir menú" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- #HERO -->
+      <section class="hero text-center" aria-label="inicio" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Tradición Peruana</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Sabores que enamoran <br>
+              en cada bocado
+            </h1>
+            <p class="body-2 hero-text slider-reveal">
+              Ven con tu familia y disfruta de la auténtica cocina peruana
+            </p>
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Ver Nuestro Menú</span>
+              <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+            </a>
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Una experiencia única</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Sabores inspirados <br>
+              en nuestra tierra
+            </h1>
+            <p class="body-2 hero-text slider-reveal">
+              Ingredientes frescos, recetas tradicionales y mucho cariño
+            </p>
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Ver Nuestro Menú</span>
+              <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+            </a>
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Increíble y delicioso</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Donde cada plato <br>
+              cuenta una historia
+            </h1>
+            <p class="body-2 hero-text slider-reveal">
+              Ven y descubre el verdadero sabor del Perú
+            </p>
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Ver Nuestro Menú</span>
+              <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="anterior" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="siguiente" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="https://wa.me/56952093541" target="_blank" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="reservar">
+          <span class="label-2 text-center span">Cick aquí </span>
+        </a>
+
+      </section>
+
+
+      <!-- #SERVICE -->
+      <section class="section service bg-black-10 text-center" aria-label="servicios">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Lo Mejor de la Casa</p>
+          <h2 class="headline-1 section-title">Nuestras Especialidades</h2>
+
+          <p class="section-text">
+            Cocina peruana auténtica con ingredientes frescos y recetas tradicionales que han pasado de generación en generación.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+                <a href="#menu" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.png" width="285" height="336" loading="lazy" alt="Entradas" class="img-cover">
+                  </figure>
+                </a>
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#menu">Entradas</a>
+                  </h3>
+                  <a href="#menu" class="btn-text hover-underline label-2">Ver Menú</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <a href="#menu" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.png" width="285" height="336" loading="lazy" alt="Platos de Fondo" class="img-cover">
+                  </figure>
+                </a>
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#menu">Platos de Fondo</a>
+                  </h3>
+                  <a href="#menu" class="btn-text hover-underline label-2">Ver Menú</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <a href="#menu" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Bebidas" class="img-cover">
+                  </figure>
+                </a>
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#menu">Bebidas</a>
+                  </h3>
+                  <a href="#menu" class="btn-text hover-underline label-2">Ver Menú</a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="" class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="" class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+      <!-- #ABOUT -->
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Nuestra Historia</p>
+            <h2 class="headline-1 section-title">Cada Sabor Cuenta una Historia</h2>
+
+            <p class="section-text">
+              En Rinconcito Huancaíno llevamos años compartiendo lo mejor de la gastronomía peruana. Nuestras recetas son herencia familiar, preparadas con ingredientes frescos y todo el cariño de nuestra cocina tradicional. Ven y descubre por qué somos el favorito de tantas familias.
+            </p>
+
+            <div class="contact-label">Reservas por WhatsApp</div>
+
+            <a href="https://wa.me/56952093541" target="_blank" class="body-1 contact-number hover-underline">+56 9 5209 3541</a>
+
+            <a href="#menu" class="btn btn-primary">
+              <span class="text text-1">Conoce Más</span>
+              <span class="text text-2" aria-hidden="true">Conoce Más</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="570" height="570" loading="lazy" alt="" class="w-100" data-parallax-item data-parallax-speed="1">
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.png" width="285" height="285" loading="lazy" alt="" class="w-100">
+            </div>
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+      <!-- #SPECIAL DISH -->
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="plato especial" class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="" class="abs-img">
+
+            <p class="section-subtitle label-2">Plato Estrella</p>
+            <h2 class="headline-1 section-title">Lomo Saltado</h2>
+
+            <p class="section-text">
+              Nuestro plato insignia: jugosos trozos de lomo de res salteados al wok con cebolla, tomate, ají amarillo y un toque de pisco. Acompañado de arroz blanco y papas fritas doraditas. ¡Una explosión de sabor peruano!
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">$15.000</del>
+              <span class="span body-1">$12.000</span>
+            </div>
+
+            <a href="#menu" class="btn btn-primary">
+              <span class="text text-1">Ver Todo el Menú</span>
+              <span class="text text-2" aria-hidden="true">Ver Todo el Menú</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+      <!-- #MENU -->
+      <section class="section menu" aria-label="menú" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Selección Especial</p>
+          <h2 class="headline-1 section-title text-center">Nuestro Menú</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Ceviche" class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Ceviche Clásico</a>
+                    </h3>
+                    <span class="badge label-1">Favorito</span>
+                    <span class="span title-2">$8.500</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Pescado fresco marinado en limón, cebolla morada, ají limo, cilantro y camote.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Ají de Gallina" class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Ají de Gallina</a>
+                    </h3>
+                    <span class="span title-2">$7.500</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Pollo deshilachado en cremosa salsa de ají amarillo, queso y nueces. Acompañado de papa y arroz.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Papa a la Huancaína" class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Papa a la Huancaína</a>
+                    </h3>
+                    <span class="span title-2">$5.500</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Nuestra especialidad de la casa: papas con la auténtica salsa huancaína cremosa y picante.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-4.jpg" width="100" height="100" loading="lazy" alt="Lomo Saltado" class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Lomo Saltado</a>
+                    </h3>
+                    <span class="badge label-1">Nuevo</span>
+                    <span class="span title-2">$9.500</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Lomo de res salteado con cebolla, tomate, ají y un toque de pisco. Con arroz y papas fritas.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Causa Limeña" class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Causa Limeña</a>
+                    </h3>
+                    <span class="span title-2">$6.500</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Puré de papa amarilla con ají, rellena de pollo, atún o palta. Servida fría.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Anticuchos" class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Anticuchos</a>
+                    </h3>
+                    <span class="span title-2">$7.000</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Brochetas de corazón marinadas en ají panca y especias, asadas a la parrilla.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            Horario de cocina: <span class="span">11:00 am</span> a <span class="span">10:00 pm</span>
+          </p>
+
+          <a href="https://wa.me/56952093541" target="_blank" class="btn btn-primary">
+            <span class="text text-1">Pide por WhatsApp</span>
+            <span class="text text-2" aria-hidden="true">Pide por WhatsApp</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="" class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="" class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+      <!-- ============================================ -->
+      <!-- #RESEÑAS (reemplaza testimonials + reservation) -->
+      <!-- ============================================ -->
+      <section class="section reviews" id="resenas" aria-label="reseñas">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Lo Que Dicen Nuestros Clientes</p>
+          <h2 class="headline-1 section-title text-center">Reseñas y Comentarios</h2>
+
+          <!-- Resumen de rating -->
+          <div class="reviews-summary">
+            <div class="rating-big">
+              <span class="rating-number" id="ratingAverage">4.8</span>
+              <div class="rating-stars-big" id="ratingStarsBig">★★★★★</div>
+              <span class="rating-count"><span id="reviewCount">476</span> reseñas</span>
+            </div>
+          </div>
+
+          <!-- Grid de reseñas -->
+          <div class="reviews-grid" id="reviewsGrid">
+            <!-- Las reseñas se cargan con JavaScript -->
+          </div>
+
+          <!-- Botón ver más -->
+          <div class="text-center">
+            <button class="btn btn-primary" id="loadMoreReviews">
+              <span class="text text-1">Ver Más Reseñas</span>
+              <span class="text text-2" aria-hidden="true">Ver Más Reseñas</span>
+            </button>
+          </div>
+
+          <!-- Formulario para dejar reseña -->
+          <div class="review-form-wrapper bg-black-10" id="contacto">
+            <h3 class="headline-1 section-title text-center">Deja Tu Reseña</h3>
+            <p class="form-text text-center">
+              Tu opinión nos ayuda a mejorar y a otros clientes a decidirse
+            </p>
+
+            <form id="reviewForm" class="review-form">
+
+              <input type="text" id="reviewName" placeholder="Tu nombre completo" autocomplete="off" required class="input-field" maxlength="60">
+
+              <div class="star-input-wrapper">
+                <span class="star-input-label">Tu calificación:</span>
+                <div class="stars-selector" id="starsSelector">
+                  <span class="star-option" data-star="1">★</span>
+                  <span class="star-option" data-star="2">★</span>
+                  <span class="star-option" data-star="3">★</span>
+                  <span class="star-option" data-star="4">★</span>
+                  <span class="star-option" data-star="5">★</span>
+                </div>
+              </div>
+
+              <textarea id="reviewText" placeholder="Cuéntanos tu experiencia..." autocomplete="off" required class="input-field" maxlength="500"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Publicar Reseña</span>
+                <span class="text text-2" aria-hidden="true">Publicar Reseña</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- #FEATURES -->
+      <section class="section features text-center" aria-label="por qué elegirnos">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Por Qué Elegirnos</p>
+          <h2 class="headline-1 section-title">Nuestras Fortalezas</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="ícono">
+                </div>
+                <h3 class="title-2 card-title">Comida Higiénica</h3>
+                <p class="label-1 card-text">Ingredientes frescos y los más altos estándares de limpieza.</p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="ícono">
+                </div>
+                <h3 class="title-2 card-title">Ambiente Familiar</h3>
+                <p class="label-1 card-text">Espacios acogedores perfectos para venir con tu familia.</p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="ícono">
+                </div>
+                <h3 class="title-2 card-title">Chefs Expertos</h3>
+                <p class="label-1 card-text">Recetas tradicionales preparadas por verdaderos maestros.</p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="ícono">
+                </div>
+                <h3 class="title-2 card-title">Eventos y Fiestas</h3>
+                <p class="label-1 card-text">Organizamos tu evento con el mejor servicio y sabor.</p>
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="" class="shape shape-1">
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="" class="shape shape-2">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- #FOOTER -->
+  <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="160" height="50" loading="lazy" alt="Rinconcito Huancaíno">
+          </a>
+
+          <!-- ============================================ -->
+          <!-- 3 SUCURSALES - EDITA AQUÍ LAS DIRECCIONES   -->
+          <!-- ============================================ -->
+          <p class="title-1" style="margin-bottom: 15px;">Nuestras Sucursales</p>
+
+          <address class="body-4" style="margin-bottom: 15px;">
+            <strong>Sucursal 1:</strong> Bio bio  638   santiago centro
+          </address>
+
+          <address class="body-4" style="margin-bottom: 15px;">
+            <strong>Sucursal 2:</strong> Covadonga  708 san bernardo
+          </address>
+
+
+          <a href="mailto:contacto@rinconcitohuancaino.com" class="body-4 contact-link">contacto@rinconcitohuancaino.com</a>
+
+          <!-- WHATSAPP 1 -->
+          <a href="https://wa.me/56952093541" target="_blank" class="body-4 contact-link">WhatsApp 1: +56 9 5209 3541</a>
+
+          <!-- WHATSAPP 2 (borra si solo usan uno) -->
+          <a href="https://wa.me/56952093541" target="_blank" class="body-4 contact-link">WhatsApp 2: +56 9 5209 3541</a>
+
+          <p class="body-4">
+            Abierto: 11:00 am - 10:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Síguenos en Redes</p>
+
+          <p class="label-1">
+            Entérate de nuestras <span class="span">promociones.</span>
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+          <li><a href="#home" class="label-2 footer-link hover-underline">Inicio</a></li>
+          <li><a href="#menu" class="label-2 footer-link hover-underline">Menú</a></li>
+          <li><a href="#about" class="label-2 footer-link hover-underline">Nosotros</a></li>
+          <li><a href="#resenas" class="label-2 footer-link hover-underline">Reseñas</a></li>
+          <li><a href="#contacto" class="label-2 footer-link hover-underline">Contacto</a></li>
+        </ul>
+
+        <ul class="footer-list">
+          <li><a href="https://www.facebook.com/rinconcito.huancaino.712921/" target="_blank" class="label-2 footer-link hover-underline">Facebook</a></li>
+          <li><a href="https://www.instagram.com/rinconcitoh/" target="_blank" class="label-2 footer-link hover-underline">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@rinconcito.huanca" target="_blank" class="label-2 footer-link hover-underline">TikTok</a></li>
+          <li><a href="https://wa.me/56952093541" target="_blank" class="label-2 footer-link hover-underline">WhatsApp</a></li>
+          <li><a href="https://maps.app.goo.gl/WHzvgLKn6pEsHMLQA" target="_blank" class="label-2 footer-link hover-underline">Google Maps</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 Rinconcito Huancaíno. Todos los derechos reservados.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- #BACK TO TOP -->
+  <a href="#top" class="back-top-btn active" aria-label="volver arriba" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/reviews.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
