@@ -2435,3 +2435,279 @@ textarea.input-field {
   .rating-big { padding: 50px 90px; }
 
 }
+/*-----------------------------------*\
+  #MENÚ CON PESTAÑAS Y FILTRO DE RESEÑAS
+  AGREGAR AL FINAL DE TU style.css
+  (después del CSS de reseñas que ya pegaste)
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
+  #MENÚ - PESTAÑAS DE CATEGORÍAS
+\*-----------------------------------*/
+
+.menu-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+  margin-block-end: 50px;
+  padding-block: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold-crayola) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-tabs::-webkit-scrollbar { height: 4px; }
+.menu-tabs::-webkit-scrollbar-track { background: transparent; }
+.menu-tabs::-webkit-scrollbar-thumb { background: var(--gold-crayola); border-radius: 2px; }
+
+.menu-tab {
+  flex-shrink: 0;
+  background-color: transparent;
+  color: var(--quick-silver);
+  border: 1px solid var(--white-alpha-20);
+  padding: 12px 24px;
+  font-family: var(--fontFamily-dm_sans);
+  font-size: var(--fontSize-label-2);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+  cursor: pointer;
+  transition: var(--transition-1);
+  white-space: nowrap;
+}
+
+.menu-tab:hover {
+  color: var(--gold-crayola);
+  border-color: var(--gold-crayola);
+}
+
+.menu-tab.active {
+  background-color: var(--gold-crayola);
+  color: var(--smoky-black-1);
+  border-color: var(--gold-crayola);
+}
+
+
+/*-----------------------------------*\
+  #MENÚ - TARJETAS DE PLATOS
+\*-----------------------------------*/
+
+.menu-items-grid {
+  display: grid;
+  gap: 30px;
+  margin-block-end: 50px;
+}
+
+.menu-item-card {
+  padding: 25px 25px;
+  border-block-end: 1px dashed var(--white-alpha-20);
+  transition: var(--transition-1);
+}
+
+.menu-item-card:hover {
+  background-color: var(--smoky-black-1);
+  padding-inline: 30px;
+}
+
+.menu-item-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block-end: 8px;
+}
+
+.menu-item-name {
+  font-family: var(--fontFamily-forum);
+  color: var(--white);
+  font-size: var(--fontSize-title-3);
+  line-height: var(--lineHeight-2);
+  margin: 0;
+}
+
+.menu-item-badge {
+  background-color: var(--gold-crayola);
+  color: var(--eerie-black-1);
+  font-family: var(--fontFamily-forum);
+  font-size: var(--fontSize-label-2);
+  line-height: var(--lineHeight-6);
+  text-transform: uppercase;
+  padding: 2px 10px;
+  letter-spacing: var(--letterSpacing-1);
+}
+
+.menu-item-price {
+  color: var(--gold-crayola);
+  font-family: var(--fontFamily-forum);
+  font-size: var(--fontSize-title-2);
+  line-height: var(--lineHeight-1);
+  margin-inline-start: auto;
+  position: relative;
+  padding-inline-start: 20px;
+}
+
+.menu-item-price::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 1px;
+  background-color: var(--white-alpha-20);
+}
+
+.menu-item-desc {
+  color: var(--quick-silver);
+  font-size: var(--fontSize-label-1);
+  line-height: var(--lineHeight-4);
+  max-width: 600px;
+}
+
+
+/*-----------------------------------*\
+  #FILTRO DE RESEÑAS POR PLATO
+\*-----------------------------------*/
+
+.reviews-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-block-end: 40px;
+  padding: 20px;
+  background-color: var(--smoky-black-1);
+  border: 1px solid var(--white-alpha-10);
+}
+
+.reviews-filter-label {
+  color: var(--white);
+  font-size: var(--fontSize-label-1);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+  font-weight: var(--weight-bold);
+}
+
+.reviews-filter select {
+  background-color: var(--eerie-black-2);
+  color: var(--white);
+  border: 1px solid var(--white-alpha-10);
+  padding: 10px 15px;
+  font-family: var(--fontFamily-dm_sans);
+  font-size: var(--fontSize-label-1);
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+  transition: border-color var(--transition-1);
+}
+
+.reviews-filter select:focus {
+  border-color: var(--gold-crayola);
+}
+
+.reviews-filter select optgroup {
+  background-color: var(--smoky-black-1);
+  color: var(--gold-crayola);
+  font-style: normal;
+  font-weight: var(--weight-bold);
+}
+
+.reviews-filter select option {
+  background-color: var(--eerie-black-2);
+  color: var(--white);
+  padding: 5px;
+}
+
+#filterInfo {
+  color: var(--gold-crayola);
+  font-size: var(--fontSize-label-1);
+  font-style: italic;
+  text-align: center;
+  min-height: 1.4em;
+}
+
+
+/*-----------------------------------*\
+  #ETIQUETA DE PLATO EN RESEÑAS
+\*-----------------------------------*/
+
+.review-dish-tag {
+  display: inline-block;
+  color: var(--gold-crayola);
+  font-size: var(--fontSize-label-2);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-1);
+  font-weight: var(--weight-bold);
+  padding: 5px 10px;
+  background-color: var(--eerie-black-2);
+  border: 1px solid var(--white-alpha-10);
+  margin-block-end: 12px;
+}
+
+
+/*-----------------------------------*\
+  #SELECT EN FORMULARIO DE RESEÑA
+\*-----------------------------------*/
+
+.review-form select.input-field {
+  cursor: pointer;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--gold-crayola) 50%),
+                    linear-gradient(135deg, var(--gold-crayola) 50%, transparent 50%);
+  background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-inline-end: 35px;
+}
+
+.review-form select.input-field optgroup {
+  background-color: var(--smoky-black-1);
+  color: var(--gold-crayola);
+  font-style: normal;
+  font-weight: var(--weight-bold);
+}
+
+.review-form select.input-field option {
+  background-color: var(--eerie-black-2);
+  color: var(--white);
+}
+
+
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+@media (min-width: 575px) {
+  .menu-tabs { justify-content: flex-start; flex-wrap: wrap; }
+  .reviews-filter {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .reviews-filter select {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-items-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+  .menu-item-card {
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-items-grid {
+    column-gap: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-tabs { gap: 15px; }
+  .menu-tab { padding: 14px 28px; }
+}

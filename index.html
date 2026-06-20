@@ -408,158 +408,50 @@
       </section>
 
 
-      <!-- #MENU -->
+       
+      <!-- ============================================ -->
+      <!-- #MENU - PEGAR ESTO ENTERO REEMPLAZANDO LA SECCIÓN ACTUAL DE MENÚ -->
+      <!-- ============================================ -->
       <section class="section menu" aria-label="menú" id="menu">
         <div class="container">
-
-          <p class="section-subtitle text-center label-2">Selección Especial</p>
-          <h2 class="headline-1 section-title text-center">Nuestro Menú</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Ceviche" class="img-cover">
-                </figure>
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Ceviche Clásico</a>
-                    </h3>
-                    <span class="badge label-1">Favorito</span>
-                    <span class="span title-2">$8.500</span>
-                  </div>
-                  <p class="card-text label-1">
-                    Pescado fresco marinado en limón, cebolla morada, ají limo, cilantro y camote.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Ají de Gallina" class="img-cover">
-                </figure>
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Ají de Gallina</a>
-                    </h3>
-                    <span class="span title-2">$7.500</span>
-                  </div>
-                  <p class="card-text label-1">
-                    Pollo deshilachado en cremosa salsa de ají amarillo, queso y nueces. Acompañado de papa y arroz.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Papa a la Huancaína" class="img-cover">
-                </figure>
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Papa a la Huancaína</a>
-                    </h3>
-                    <span class="span title-2">$5.500</span>
-                  </div>
-                  <p class="card-text label-1">
-                    Nuestra especialidad de la casa: papas con la auténtica salsa huancaína cremosa y picante.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-4.jpg" width="100" height="100" loading="lazy" alt="Lomo Saltado" class="img-cover">
-                </figure>
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Lomo Saltado</a>
-                    </h3>
-                    <span class="badge label-1">Nuevo</span>
-                    <span class="span title-2">$9.500</span>
-                  </div>
-                  <p class="card-text label-1">
-                    Lomo de res salteado con cebolla, tomate, ají y un toque de pisco. Con arroz y papas fritas.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Causa Limeña" class="img-cover">
-                </figure>
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Causa Limeña</a>
-                    </h3>
-                    <span class="span title-2">$6.500</span>
-                  </div>
-                  <p class="card-text label-1">
-                    Puré de papa amarilla con ají, rellena de pollo, atún o palta. Servida fría.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Anticuchos" class="img-cover">
-                </figure>
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Anticuchos</a>
-                    </h3>
-                    <span class="span title-2">$7.000</span>
-                  </div>
-                  <p class="card-text label-1">
-                    Brochetas de corazón marinadas en ají panca y especias, asadas a la parrilla.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-          </ul>
-
+      
+          <p class="section-subtitle text-center label-2">Nuestra Carta Completa</p>
+          <h2 class="headline-1 section-title text-center">Menú</h2>
+      
+          <!-- Pestañas de categorías (se generan con JS) -->
+          <div class="menu-tabs" id="menuTabs"></div>
+      
+          <!-- Contenido del menú (se genera con JS) -->
+          <div id="menuContent"></div>
+      
           <p class="menu-text text-center">
             Horario de cocina: <span class="span">11:00 am</span> a <span class="span">10:00 pm</span>
           </p>
-
+      
           <a href="https://wa.me/56952093541" target="_blank" class="btn btn-primary">
             <span class="text text-1">Pide por WhatsApp</span>
             <span class="text text-2" aria-hidden="true">Pide por WhatsApp</span>
           </a>
-
+      
           <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="" class="shape shape-2 move-anim">
           <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="" class="shape shape-3 move-anim">
-
+      
         </div>
       </section>
+      
+      
+      
 
-
+          
       <!-- ============================================ -->
-      <!-- #RESEÑAS (reemplaza testimonials + reservation) -->
+      <!-- #RESEÑAS - PEGAR ESTO ENTERO REEMPLAZANDO LA SECCIÓN ACTUAL DE RESEÑAS -->
       <!-- ============================================ -->
       <section class="section reviews" id="resenas" aria-label="reseñas">
         <div class="container">
-
+      
           <p class="section-subtitle text-center label-2">Lo Que Dicen Nuestros Clientes</p>
           <h2 class="headline-1 section-title text-center">Reseñas y Comentarios</h2>
-
+      
           <!-- Resumen de rating -->
           <div class="reviews-summary">
             <div class="rating-big">
@@ -568,31 +460,44 @@
               <span class="rating-count"><span id="reviewCount">476</span> reseñas</span>
             </div>
           </div>
-
-          <!-- Grid de reseñas -->
-          <div class="reviews-grid" id="reviewsGrid">
-            <!-- Las reseñas se cargan con JavaScript -->
+      
+          <!-- FILTRO: ver reseñas de un plato específico -->
+          <div class="reviews-filter">
+            <label for="filterDish" class="reviews-filter-label">Filtrar por plato:</label>
+            <select id="filterDish">
+              <option value="all">Todas las reseñas</option>
+            </select>
           </div>
-
+      
+          <p id="filterInfo"></p>
+      
+          <!-- Grid de reseñas (las llena el JS) -->
+          <div class="reviews-grid" id="reviewsGrid"></div>
+      
           <!-- Botón ver más -->
-          <div class="text-center">
+          <div class="load-more-wrapper">
             <button class="btn btn-primary" id="loadMoreReviews">
               <span class="text text-1">Ver Más Reseñas</span>
               <span class="text text-2" aria-hidden="true">Ver Más Reseñas</span>
             </button>
           </div>
-
+      
           <!-- Formulario para dejar reseña -->
-          <div class="review-form-wrapper bg-black-10" id="contacto">
+          <div class="review-form-wrapper" id="contacto">
             <h3 class="headline-1 section-title text-center">Deja Tu Reseña</h3>
             <p class="form-text text-center">
               Tu opinión nos ayuda a mejorar y a otros clientes a decidirse
             </p>
-
+      
             <form id="reviewForm" class="review-form">
-
+      
               <input type="text" id="reviewName" placeholder="Tu nombre completo" autocomplete="off" required class="input-field" maxlength="60">
-
+      
+              <!-- SELECTOR DE PLATO -->
+              <select id="reviewDish" class="input-field">
+                <option value="">— Reseña general del restaurante —</option>
+              </select>
+      
               <div class="star-input-wrapper">
                 <span class="star-input-label">Tu calificación:</span>
                 <div class="stars-selector" id="starsSelector">
@@ -603,20 +508,20 @@
                   <span class="star-option" data-star="5">★</span>
                 </div>
               </div>
-
+      
               <textarea id="reviewText" placeholder="Cuéntanos tu experiencia..." autocomplete="off" required class="input-field" maxlength="500"></textarea>
-
+      
               <button type="submit" class="btn btn-secondary">
                 <span class="text text-1">Publicar Reseña</span>
                 <span class="text text-2" aria-hidden="true">Publicar Reseña</span>
               </button>
-
+      
             </form>
           </div>
-
+      
         </div>
       </section>
-
+ 
 
       <!-- #FEATURES -->
       <section class="section features text-center" aria-label="por qué elegirnos">
@@ -767,6 +672,7 @@
 
   <!-- custom js link -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/menu.js"></script>
   <script src="./assets/js/reviews.js"></script>
 
   <!-- ionicon link -->
