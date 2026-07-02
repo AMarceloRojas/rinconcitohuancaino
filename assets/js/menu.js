@@ -17,7 +17,6 @@ const menuData = {
       { id: "pulpo-olivo", name: "Pulpo al Olivo", price: 9900, desc: "Tradicional pulpo con cremosa salsa de aceitunas." },
       { id: "leche-tigre", name: "Leche de Tigre", price: 8900, desc: "El concentrado del ceviche, con todo el sabor del mar." },
       { id: "copon-leche-tigre", name: "Copón de Leche de Tigre", price: 14000, desc: "Versión grande con mariscos surtidos. Ideal para compartir." },
-      { id: "carretillero", name: "Carretillero", price: 8000, desc: "Combinado de ceviche, chicharrón de pescado y arroz con mariscos." },
       { id: "anticucho-corazon", name: "Anticucho de Corazón", price: 8000, desc: "Brochetas de corazón marinadas en ají panca, asadas a la parrilla." },
       { id: "anticucho-pollo", name: "Anticucho de Pollo", price: 7500, desc: "Brochetas de pollo marinadas en especias peruanas." },
       { id: "anticucho-carne", name: "Anticucho de Carne", price: 9900, desc: "Brochetas de carne marinadas, asadas a la parrilla." },
