@@ -126,9 +126,9 @@ const menuData = {
     ]
   },
 
-  vegetariano: {
-    title: "Vegetariano",
-    items: [
+      vegetariano: {
+      title: "Vegetariano",
+      items: [
       { id: "tofu-salteado", name: "Tofu Salteado", price: 8500, desc: "Trozos de tofu salteados con cebolla, tomate y pimentón." },
       { id: "tallarin-vegetariano", name: "Tallarín Vegetariano", price: 8000, desc: "Tallarines con champiñones, pimentón y verduras." },
       { id: "tallarin-tofu", name: "Tallarín Salteado de Tofu", price: 8500, desc: "Tallarines salteados al wok con tofu." },
@@ -136,7 +136,18 @@ const menuData = {
       { id: "causa-vegetariana", name: "Causa Vegetariana", price: 8000, desc: "Causa rellena de verduras frescas." },
       { id: "tortilla-verduras", name: "Tortilla de Verduras", price: 8000, desc: "Tortilla esponjosa con mix de verduras." },
       { id: "arroz-vegetariano", name: "Arroz Salteado Vegetariano", price: 7000, desc: "Arroz salteado al wok con verduras." },
-      { id: "fetuccini-champinon", name: "Fetuccini a la Huancaína con Champiñón", price: 8500, desc: "Fetuccini con salsa huancaína y champiñones salteados." }
+      { id: "fetuccini-champinon", name: "Fetuccini a la Huancaína con Champiñón", price: 8500, desc: "Fetuccini con salsa huancaína y champiñones salteados." },
+      { id: "filete-seitan-parrilla", name: "Filete de Seitán a la Parrilla", price: 11000, desc: "Filete de seitán asado a la parrilla, jugoso y bien sazonado." },
+      { id: "broaster-vegetariano", name: "Broaster Vegetariano", price: 12000, desc: "Versión vegetariana del clásico broaster, crocante por fuera." },
+      { id: "chorrillana-seitan", name: "Chorrillana de Seitán", price: 14000, desc: "Seitán en trozos con papas fritas, cebolla caramelizada y huevo.", badge: "Para compartir" },
+      { id: "anticucho-seitan", name: "Anticucho de Seitán", price: 12000, desc: "Brochetas de seitán marinadas en ají panca, a la parrilla." },
+      { id: "filete-seitan-champinon", name: "Filete de Seitán con Champiñón Salteado", price: 13500, desc: "Filete de seitán bañado en champiñones salteados." },
+      { id: "milanesa-seitan", name: "Milanesa de Seitán", price: 12500, desc: "Milanesa de seitán apanada y crocante." },
+      { id: "seitan-plancha-champinon", name: "Seitán a la Plancha con Champiñón", price: 13500, desc: "Seitán a la plancha acompañado de champiñones salteados." },
+      { id: "tallarin-mixto-seitan", name: "Tallarín Mixto Salteado de Seitán", price: 13500, desc: "Tallarines salteados al wok con seitán." },
+      { id: "chaufa-mixto-seitan-tofu", name: "Chaufa Mixto de Seitán con Tofu", price: 13500, desc: "Arroz chaufa salteado con seitán y tofu." },
+      { id: "aji-gallina-vegetariano", name: "Ají de Gallina Vegetariano", price: 12500, desc: "Nuestra versión vegetariana del clásico ají de gallina.", badge: "Nuevo" },
+      { id: "chaufa-seitan", name: "Chaufa de Seitán", price: 11500, desc: "Arroz chaufa salteado al wok con seitán." }
     ]
   },
 
